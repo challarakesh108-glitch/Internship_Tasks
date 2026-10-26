@@ -1,0 +1,14 @@
+#Q19
+
+def merge_the_tools(string, k):
+    for i in range(0, len(string), k):
+        substring = string[i:i+k]
+        seen = ""
+        
+        for ch in substring:
+            if ch not in seen:
+                seen += ch
+        print(seen)
+    
+
+if __name__ == '__main__':
